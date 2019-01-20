@@ -1,10 +1,10 @@
 spring:
     profiles: test
-message: Hello Message From git Test DB Service
+message: Hello Message From git Test DB Service11
 
 
 ---
 
 spring:
     profiles: dev
-message: Hello Message From git DEV DB Service
+message: Hello Message From git DEV DB Servicee
