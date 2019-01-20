@@ -1,1 +1,10 @@
-message: Hello Message From git DB Service
+spring:
+    profiles: test
+message: Hello Message From git Test DB Service
+
+
+---
+
+spring:
+    profiles: dev
+message: Hello Message From git DEV DB Service
