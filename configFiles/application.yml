@@ -1,6 +1,4 @@
 ---
-spring:
-  profiles: default
 eureka:
   client:
     registerWithEureka: true
@@ -8,4 +6,4 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka
       
-message: Hello Message From git repo1 bb
+message: Hello Message From application file
