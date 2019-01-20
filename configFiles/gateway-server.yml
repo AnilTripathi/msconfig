@@ -1,0 +1,6 @@
+zuul:
+  prefix: /api
+  routes:
+    db-service:
+      path: /dservice/**
+      url: http://localhost:8002
