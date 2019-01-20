@@ -3,4 +3,4 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka
       
-message: Hello Message From git repo1
+message: Hello Message From git repo1 bb
