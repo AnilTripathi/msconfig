@@ -1,6 +1,6 @@
 spring:
     profiles: test
-message: Hello Message From git Test DB Service uu
+message: Hello Message From git Test DB Service Updates
 
 
 ---
