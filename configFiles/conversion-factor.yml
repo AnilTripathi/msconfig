@@ -1,0 +1,33 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ws_service?useUnicode=true&autoReconnect=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: myfp360
+    hikari:
+      connectionTimeout: 30000
+      minimumIdle: 2
+      maximumPoolSize: 30
+      idleTimeout: 600000
+      maxLifetime: 1800000
+      autoCommit: true
+      catalog: ws_tutorial
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: ERROR
+    com:
+      zaxxer:
+        hikari:
+          HikariConfig: TRACE
