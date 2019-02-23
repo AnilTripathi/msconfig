@@ -1,6 +1,7 @@
-server:
-  port: 8100
+
 spring:
+  profiles:
+    active: dev,default
   datasource:
     driver: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ws_service?useUnicode=true&autoReconnect=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
@@ -31,3 +32,5 @@ logging:
       zaxxer:
         hikari:
           HikariConfig: TRACE
+          
+message: Hello Message From conversion-factor file
